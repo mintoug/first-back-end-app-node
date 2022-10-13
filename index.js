@@ -9,6 +9,7 @@ res.status(200).send("<h1>hello from lco</h1>")
 })
 
 app.get("/api/v1/:token", (req, res)=> {
+    console.log(req.params.token)
 res.status(200).json({param: req.params.token})
 })
 app.get("/api/v1/instagram", (req, res) => {
